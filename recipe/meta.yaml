@@ -1,6 +1,6 @@
 {% set name = "xsimd" %}
-{% set version = "3.0.0" %}
-{% set sha256 = "eb3bea1a6888a19a76746343088c832125a3f7caf631625b461b2900c65055b8" %}
+{% set version = "3.1.0" %}
+{% set sha256 = "d56288826f6b82fd9583f83ace6aa2306ba2ae82cec003de1d04ce17fbb1e91f" %}
 
 package:
   name: {{ name|lower }}
@@ -21,13 +21,12 @@ requirements:
 
 test:
   commands:
-    - test -d ${PREFIX}/include/xsimd  # [unix]
     - test -f ${PREFIX}/include/xsimd/xsimd.hpp  # [unix]
-    - test -f ${PREFIX}/share/cmake/xsimd/xsimdConfig.cmake  # [unix]
-    - test -f ${PREFIX}/share/cmake/xsimd/xsimdConfigVersion.cmake  # [unix]
+    - test -f ${PREFIX}/lib/cmake/xsimd/xsimdConfig.cmake  # [unix]
+    - test -f ${PREFIX}/lib/cmake/xsimd/xsimdConfigVersion.cmake  # [unix]
     - if exist %LIBRARY_PREFIX%\include\xsimd\xsimd.hpp (exit 0) else (exit 1)  # [win]
-    - if exist %PREFIX%\share\cmake\xsimdConfig.cmake (exit 0) else (exit 1)  # [win]
-    - if exist %PREFIX%\share\cmake\xsimdConfigVersion.cmake (exit 0) else (exit 1)  # [win]
+    - if exist %LIBRARY_PREFIX%\lib\cmake\xsimdConfig.cmake (exit 0) else (exit 1)  # [win]
+    - if exist %LIBRARY_PREFIX%\lib\cmake\xsimdConfigVersion.cmake (exit 0) else (exit 1)  # [win]
 
 about:
   home: http://quantstack.net/xsimd
