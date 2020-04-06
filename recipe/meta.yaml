@@ -1,6 +1,6 @@
 {% set name = "xsimd" %}
-{% set version = "7.4.6" %}
-{% set sha256 = "0e70411a9fff76ac17c6ef642465d4f0d1f29d3f3a70e5ece4cfc522bd4fcd0b" %}
+{% set version = "7.4.7" %}
+{% set sha256 = "392278c210592350096ef77c97d8ad3c311c879e910e44de328a122b9e5afed5" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [win and vc<14]
+  skip: true  # [win and vc<14]
 
 requirements:
   host:
@@ -34,8 +34,8 @@ about:
   license: BSD 3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'C++ Wrappers for SIMD Intrinsices'
-  description: 'High-level APIs for SIMD operations'
+  summary: C++ Wrappers for SIMD Intrinsices
+  description: High-level APIs for SIMD operations
   doc_url: http://xsimd.readthedocs.io
   dev_url: https://github.com/QuantStack/xsimd
 
