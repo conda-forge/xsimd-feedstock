@@ -1,6 +1,6 @@
 {% set name = "xsimd" %}
-{% set version = "7.4.8" %}
-{% set sha256 = "318676faae48d2082440df9f161a95303a3f29c3f0b03ff32ca24063b12f5699" %}
+{% set version = "7.4.9" %}
+{% set sha256 = "f6601ffb002864ec0dc6013efd9f7a72d756418857c2d893be0644a2f041874e" %}
 
 package:
   name: {{ name|lower }}
@@ -31,7 +31,7 @@ test:
 
 about:
   home: http://quantstack.net/xsimd
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: C++ Wrappers for SIMD Intrinsices
