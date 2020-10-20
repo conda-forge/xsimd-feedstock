@@ -31,7 +31,7 @@ test:
 
 about:
   home: http://quantstack.net/xsimd
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: C++ Wrappers for SIMD Intrinsices
