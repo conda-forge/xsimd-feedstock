@@ -3,7 +3,7 @@ About xsimd
 
 Home: http://quantstack.net/xsimd
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xsimd-feedstock/blob/master/LICENSE.txt)
 
@@ -155,4 +155,5 @@ Feedstock Maintainers
 
 * [@JohanMabille](https://github.com/JohanMabille/)
 * [@SylvainCorlay](https://github.com/SylvainCorlay/)
+* [@davidbrochart](https://github.com/davidbrochart/)
 
