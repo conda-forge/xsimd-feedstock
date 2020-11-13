@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
 
 requirements:
@@ -25,9 +25,9 @@ test:
     - test -f ${PREFIX}/include/xsimd/xsimd.hpp  # [unix]
     - test -f ${PREFIX}/lib/cmake/xsimd/xsimdConfig.cmake  # [unix]
     - test -f ${PREFIX}/lib/cmake/xsimd/xsimdConfigVersion.cmake  # [unix]
-    - if exist %LIBRARY_PREFIX%\include\xsimd\xsimd.hpp (exit 0) else (exit 1)  # [win]
-    - if exist %LIBRARY_PREFIX%\lib\cmake\xsimdConfig.cmake (exit 0) else (exit 1)  # [win]
-    - if exist %LIBRARY_PREFIX%\lib\cmake\xsimdConfigVersion.cmake (exit 0) else (exit 1)  # [win]
+    - if not exist %LIBRARY_PREFIX%\include\xsimd\xsimd.hpp (exit 1)  # [win]
+    - if not exist %LIBRARY_PREFIX%\lib\cmake\xsimd\xsimdConfig.cmake (exit 1)  # [win]
+    - if not exist %LIBRARY_PREFIX%\lib\cmake\xsimd\xsimdConfigVersion.cmake (exit 1)  # [win]
 
 about:
   home: http://quantstack.net/xsimd
@@ -43,3 +43,4 @@ extra:
   recipe-maintainers:
     - SylvainCorlay
     - JohanMabille
+    - davidbrochart
