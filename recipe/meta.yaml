@@ -7,16 +7,14 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/QuantStack/xsimd/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  skip: true  # [win and vc<14]
+  number: 2
 
 requirements:
-  host:
+  build:
     - {{ compiler('cxx') }}
     - cmake
 
