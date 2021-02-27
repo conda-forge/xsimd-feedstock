@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/QuantStack/xsimd/archive/{{ version }}.tar.gz
+  url: https://github.com/xtensor-stack/xsimd/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   build:
@@ -28,14 +28,14 @@ test:
     - if not exist %LIBRARY_PREFIX%\lib\cmake\xsimd\xsimdConfigVersion.cmake (exit 1)  # [win]
 
 about:
-  home: http://quantstack.net/xsimd
+  home: https://github.com/xtensor-stack/xsimd
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: C++ Wrappers for SIMD Intrinsices
   description: High-level APIs for SIMD operations
-  doc_url: http://xsimd.readthedocs.io
-  dev_url: https://github.com/QuantStack/xsimd
+  doc_url: httpis://xsimd.readthedocs.io
+  dev_url: https://github.com/xtensor-stack/xsimd
 
 extra:
   recipe-maintainers:
