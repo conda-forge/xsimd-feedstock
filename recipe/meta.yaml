@@ -1,6 +1,6 @@
 {% set name = "xsimd" %}
-{% set version = "7.6.0" %}
-{% set sha256 = "eaf47f1a316ef6c3287b266161eeafc5aa61226ce5ac6c13502546435b790252" %}
+{% set version = "8.0.5" %}
+{% set sha256 = "0e1b5d973b63009f06a3885931a37452580dbc8d7ca8ad40d4b8c80d2a0f84d7" %}
 
 package:
   name: {{ name|lower }}
@@ -35,7 +35,7 @@ about:
   license_file: LICENSE
   summary: C++ Wrappers for SIMD Intrinsices
   description: High-level APIs for SIMD operations
-  doc_url: httpis://xsimd.readthedocs.io
+  doc_url: https://xsimd.readthedocs.io/en/latest/
   dev_url: https://github.com/xtensor-stack/xsimd
 
 extra:
