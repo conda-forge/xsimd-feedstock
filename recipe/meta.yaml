@@ -1,6 +1,6 @@
 {% set name = "xsimd" %}
-{% set version = "8.1.0" %}
-{% set sha256 = "d52551360d37709675237d2a0418e28f70995b5b7cdad7c674626bcfbbf48328" %}
+{% set version = "9.0.0" %}
+{% set sha256 = "67aac0c414e0ef4911c16b6e454b5ccc6af130bfa3b7735161b5e8aa9d6e683e" %}
 
 package:
   name: {{ name|lower }}
