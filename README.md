@@ -1,11 +1,11 @@
-About xsimd
-===========
+About xsimd-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xsimd-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/xtensor-stack/xsimd
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xsimd-feedstock/blob/main/LICENSE.txt)
 
 Summary: C++ Wrappers for SIMD Intrinsices
 
