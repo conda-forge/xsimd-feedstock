@@ -1,5 +1,5 @@
 {% set name = "xsimd" %}
-{% set version = "12.0.0" %}
+{% set version = "12.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/xtensor-stack/xsimd/archive/{{ version }}.tar.gz
-  sha256: 6f156ec9bcc602d2581ef023ef0e927e3759c30cf1405028210e8c103a4f846d
+  sha256: 86b86e0aeba7a85575f6e079728f0c2b65307dddb7210487f2b7cb261ac8a4a2
 
 build:
   number: 0
