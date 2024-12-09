@@ -212,6 +212,6 @@ Feedstock Maintainers
 
 * [@JohanMabille](https://github.com/JohanMabille/)
 * [@SylvainCorlay](https://github.com/SylvainCorlay/)
-* [@conda-forge/xtensor](https://github.com/conda-forge/xtensor/)
+* [@conda-forge/xtensor](https://github.com/orgs/conda-forge/teams/xtensor/)
 * [@davidbrochart](https://github.com/davidbrochart/)
 
