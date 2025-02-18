@@ -1,5 +1,5 @@
 {% set name = "xsimd" %}
-{% set version = "13.0.0" %}
+{% set version = "13.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/xtensor-stack/xsimd/archive/{{ version }}.tar.gz
-  sha256: 8bdbbad0c3e7afa38d88d0d484d70a1671a1d8aefff03f4223ab2eb6a41110a3
+  sha256: 88c9dc6da677feadb40fe09f467659ba0a98e9987f7491d51919ee13d897efa4
 
 build:
   number: 0
@@ -22,11 +22,11 @@ requirements:
 test:
   commands:
     - test -f ${PREFIX}/include/xsimd/xsimd.hpp  # [unix]
-    - test -f ${PREFIX}/lib/cmake/xsimd/xsimdConfig.cmake  # [unix]
-    - test -f ${PREFIX}/lib/cmake/xsimd/xsimdConfigVersion.cmake  # [unix]
+    - test -f ${PREFIX}/share/cmake/xsimd/xsimdConfig.cmake  # [unix]
+    - test -f ${PREFIX}/share/cmake/xsimd/xsimdConfigVersion.cmake  # [unix]
     - if not exist %LIBRARY_PREFIX%\include\xsimd\xsimd.hpp (exit 1)  # [win]
-    - if not exist %LIBRARY_PREFIX%\lib\cmake\xsimd\xsimdConfig.cmake (exit 1)  # [win]
-    - if not exist %LIBRARY_PREFIX%\lib\cmake\xsimd\xsimdConfigVersion.cmake (exit 1)  # [win]
+    - if not exist %LIBRARY_PREFIX%\share\cmake\xsimd\xsimdConfig.cmake (exit 1)  # [win]
+    - if not exist %LIBRARY_PREFIX%\share\cmake\xsimd\xsimdConfigVersion.cmake (exit 1)  # [win]
 
 about:
   home: https://github.com/xtensor-stack/xsimd
