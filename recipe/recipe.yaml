@@ -32,13 +32,8 @@ tests:
       include:
         - "xsimd/xsimd.hpp"
       files:
-        - if: unix
-          then:
-            - share/cmake/xsimd/xsimdConfig.cmake
-            - share/cmake/xsimd/xsimdConfigVersion.cmake
-          else:
-            - Library/share/cmake/xsimd/xsimdConfig.cmake
-            - Library/share/cmake/xsimd/xsimdConfigVersion.cmake
+        - ${{ "Library/" if win }}share/cmake/xsimd/xsimdConfig.cmake
+        - ${{ "Library/" if win }}share/cmake/xsimd/xsimdConfigVersion.cmake
 
 about:
   license: BSD-3-Clause
