@@ -2,8 +2,7 @@ schema_version: 1
 
 context:
   name: xsimd
-  version: 14.1.0
-  library_prefix: ${{ "${PREFIX}" if unix else "%LIBRARY_PREFIX%" }}
+  version: 14.2.0
 
 package:
   name: ${{ name|lower }}
@@ -11,12 +10,12 @@ package:
 
 source:
   url: https://github.com/xtensor-stack/xsimd/archive/${{ version }}.tar.gz
-  sha256: 8da77b66214e73565f6111ba494322c853552b7b40cff69779b42e2100eed16f
+  sha256: 21e841ab684b05331e81e7f782431753a029ef7b7d9d6d3ddab837e7782a40ee
 
 build:
   number: 0
   script:
-    - cmake -G "Ninja" -B build/ -D CMAKE_INSTALL_PREFIX=${{ library_prefix }} -D CMAKE_INSTALL_LIBDIR="lib" -D BUILD_TESTS=OFF
+    - cmake -G "Ninja" -B build/ -D BUILD_TESTS=OFF ${{ "%CMAKE_ARGS%" if win else "${CMAKE_ARGS}" }}
     - cmake --build build/
     - cmake --install build/
 
